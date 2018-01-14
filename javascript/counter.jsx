@@ -18,16 +18,19 @@ class Counter extends React.Component {
   }
 
   render () {
+
+    const improvedText = "YOLO CASH MONEY: " + this.props.text
+
     return(
       <div>
 
-        <div>{this.props.text}</div>
+        <div>{improvedText}</div>
 
         <div>
           Count: {this.state.count}
         </div>
 
-        <button onClick={() => this.incrementCounter(1)}>
+        <button onClick={() => { this.incrementCounter(1)} }>
           Plus One
         </button>
 
