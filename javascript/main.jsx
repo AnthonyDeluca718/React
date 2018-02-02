@@ -1,18 +1,16 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Counter from './counter.jsx'
-import DecoratedButton from './decoratedButton.jsx'
-import ArrayRender from './arrayRender.jsx'
-import Stateless from './stateless.jsx'
+
+import { HashRouter } from 'react-router-dom'
+import App from './router.jsx'
 
 function main() {
-  const element = <Counter text="Time to lear about destructuring and stateless components!"></Counter>
-  // const element = <Stateless firstName="Titania" lastName="Freyja"></Stateless>
-
   const root = document.getElementById('root')
 
   ReactDOM.render(
-    element,
+    <HashRouter>
+      <App />
+    </HashRouter>,
     root
   )
 }

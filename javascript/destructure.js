@@ -8,6 +8,7 @@ sayStuff({
   number: 666
 })
 
+
 function destructuredSayStuff ({name, number}) {
   console.log(name)
   console.log(number)
