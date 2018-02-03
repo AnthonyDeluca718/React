@@ -35,6 +35,14 @@ class Counter extends React.Component {
     })
   }
 
+  componentWillMount () {
+    console.log('Counter Component Mounted')
+  }
+
+  componentWillUnmount () {
+    console.log(`Unmounting. Final Value: ${this.state.count}`)
+  }
+
   buttons () {
     const buttons = numbers.map(num => {
       const text = `I increase things by ${num}`
